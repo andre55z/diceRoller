@@ -18,7 +18,7 @@ namespace DiceRoller
             Console.WriteLine(@"OK, lets roll? (Press ENTER)");
             Console.ReadLine();
             Random random= new Random();
-            diceSides = random.Next(1,diceSides);
+            diceSides = random.Next(1,diceSides + 1);
             Console.WriteLine($@"The number is {diceSides}");
         }
     }
